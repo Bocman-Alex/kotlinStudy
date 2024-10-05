@@ -1,4 +1,4 @@
-package domain.models;
+package domain.models
 
-public class Question {
+class Question (val quest :String,val correctAnswer : String,val firstUnCorrectAnswer:String,val secondUnCorrectAnswer:String,val thirdUnCorrectAnswer:String) {
 }
