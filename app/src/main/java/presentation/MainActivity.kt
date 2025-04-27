@@ -1,27 +1,20 @@
 package presentation
 
 import android.os.Bundle
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import com.example.kotlinstudy.R
 import com.example.kotlinstudy.databinding.ActivityMainBinding
-import domain.models.Question
-import domain.usecase.newQuestionUsecase
+import domain.usecase.ChooseCorrectUsecase
+import domain.usecase.NewQuestionUsecase
+import domain.usecase.SetQuestionOnButtons
 
 class MainActivity : AppCompatActivity()
 {
+
 	private lateinit var binding: ActivityMainBinding
-	private val newQuestionUsecase = newQuestionUsecase()
+	private val newQuestionUsecase = NewQuestionUsecase()
+	private val chooseCorrectUsecase = ChooseCorrectUsecase()
+	private val setQuestionOnButtons = SetQuestionOnButtons()
 
-
-	private fun setQuest(ob: Question)
-	{
-		binding.queTextView.text = ob.quest
-		binding.bFirstAnswer.text= ob.correctAnswer
-		binding.bSecondAnswer.text=ob.firstUnCorrectAnswer
-		binding.bThirdAnswer.text=ob.thirdUnCorrectAnswer
-		binding.bFourthAnswer.text=ob.secondUnCorrectAnswer
-	}
 
 	override fun onCreate(savedInstanceState: Bundle?)
 	{
@@ -29,11 +22,47 @@ class MainActivity : AppCompatActivity()
 		binding = ActivityMainBinding.inflate(layoutInflater)
 		setContentView(binding.root)
 
+		val context = this
+		var question = newQuestionUsecase.constructQuestion()
 
-		setQuest(newQuestionUsecase.execute())
 
-		binding.bNext.setOnClickListener { setQuest(newQuestionUsecase.execute()) }
+		setQuestionOnButtons.setQuest(question, binding)
 
+
+		binding.bNext.setOnClickListener {
+			question = newQuestionUsecase.constructQuestion()
+			setQuestionOnButtons.setQuest(question, binding)
+		}
+
+
+		binding.bFirstAnswer.setOnClickListener {
+			chooseCorrectUsecase.equals(
+				binding.bFirstAnswer.text.toString(),
+				context,
+				question.correctAnswer
+			)
+		}
+		binding.bSecondAnswer.setOnClickListener {
+			chooseCorrectUsecase.equals(
+				binding.bSecondAnswer.text.toString(),
+				context,
+				question.correctAnswer
+			)
+		}
+		binding.bThirdAnswer.setOnClickListener {
+			chooseCorrectUsecase.equals(
+				binding.bThirdAnswer.text.toString(),
+				context,
+				question.correctAnswer
+			)
+		}
+		binding.bFourthAnswer.setOnClickListener {
+			chooseCorrectUsecase.equals(
+				binding.bFourthAnswer.text.toString(),
+				context,
+				question.correctAnswer
+			)
+		}
 
 	}
 }
