@@ -12,5 +12,301 @@
     "firstUnCorrectAnswer": "val - для чисел, var - для строк",
     "secondUnCorrectAnswer": "val - изменяемая, var - неизменяемая",
     "thirdUnCorrectAnswer": "Разницы нет"
+  },
+  {
+    "quest": "Что такое `data class` в Kotlin?",
+    "correctAnswer": "Класс для хранения данных с автогенерацией методов toString(), equals(), hashCode() и copy()",
+    "firstUnCorrectAnswer": "Класс для работы с базами данных",
+    "secondUnCorrectAnswer": "Специальный класс для многопоточности",
+    "thirdUnCorrectAnswer": "Анонимный класс"
+  },
+  {
+    "quest": "Как работает оператор `?:` (elvis operator)?",
+    "correctAnswer": "Возвращает левый операнд если он не null, иначе правый",
+    "firstUnCorrectAnswer": "Проверяет равенство двух объектов",
+    "secondUnCorrectAnswer": "Выполняет логическое ИЛИ",
+    "thirdUnCorrectAnswer": "Преобразует тип переменной"
+  },
+  {
+    "quest": "Что такое `companion object`?",
+    "correctAnswer": "Аналог static-методов и полей в Java, но с более мощными возможностями",
+    "firstUnCorrectAnswer": "Объект для хранения констант",
+    "secondUnCorrectAnswer": "Специальный тип коллекции",
+    "thirdUnCorrectAnswer": "Анонимный класс внутри другого класса"
+  },
+  {
+    "quest": "Для чего используется ключевое слово `lateinit`?",
+    "correctAnswer": "Для отложенной инициализации non-null переменных",
+    "firstUnCorrectAnswer": "Для объявления констант",
+    "secondUnCorrectAnswer": "Для создания ленивых вычислений",
+    "thirdUnCorrectAnswer": "Для пометки устаревшего кода"
+  },
+  {
+    "quest": "Что делает модификатор `internal`?",
+    "correctAnswer": "Ограничивает видимость в пределах модуля",
+    "firstUnCorrectAnswer": "Делает элемент видимым только внутри класса",
+    "secondUnCorrectAnswer": "Позволяет обращаться к элементу из Java-кода",
+    "thirdUnCorrectAnswer": "Автоматически генерирует геттеры и сеттеры"
+  },
+  {
+    "quest": "Как работает `when` в Kotlin?",
+    "correctAnswer": "Аналог switch в Java, но с более мощным функционалом",
+    "firstUnCorrectAnswer": "Создает цикл while",
+    "secondUnCorrectAnswer": "Проверяет условие аналогично if",
+    "thirdUnCorrectAnswer": "Обрабатывает исключения"
+  },
+  {
+    "quest": "Что такое `extension functions`?",
+    "correctAnswer": "Функции, расширяющие возможности класса без модификации его кода",
+    "firstUnCorrectAnswer": "Функции с переменным числом аргументов",
+    "secondUnCorrectAnswer": "Рекурсивные функции",
+    "thirdUnCorrectAnswer": "Анонимные функции"
+  },
+  {
+    "quest": "Чем отличается `List` от `MutableList`?",
+    "correctAnswer": "List - неизменяемый, MutableList - изменяемый",
+    "firstUnCorrectAnswer": "List - для примитивов, MutableList - для объектов",
+    "secondUnCorrectAnswer": "List - более производительный",
+    "thirdUnCorrectAnswer": "Разницы нет"
+  },
+  {
+    "quest": "Что такое `sealed class`?",
+    "correctAnswer": "Класс с ограниченной иерархией наследования (известной на этапе компиляции)",
+    "firstUnCorrectAnswer": "Класс, который нельзя наследовать",
+    "secondUnCorrectAnswer": "Класс для шифрования данных",
+    "thirdUnCorrectAnswer": "Абстрактный класс с единственным конструктором"
+  },
+  {
+    "quest": "Как работает `lazy` инициализация?",
+    "correctAnswer": "Значение вычисляется при первом обращении и затем кэшируется",
+    "firstUnCorrectAnswer": "Значение пересчитывается при каждом обращении",
+    "secondUnCorrectAnswer": "Значение инициализируется в фоновом потоке",
+    "thirdUnCorrectAnswer": "Значение никогда не инициализируется"
+  },
+  {
+    "quest": "Что такое `coroutine` в Kotlin?",
+    "correctAnswer": "Легковесный поток для асинхронных операций",
+    "firstUnCorrectAnswer": "Специальный тип коллекции",
+    "secondUnCorrectAnswer": "Модификатор для переменных",
+    "thirdUnCorrectAnswer": "Аннотация для оптимизации кода"
+  },
+  {
+    "quest": "Как объявить синглтон в Kotlin?",
+    "correctAnswer": "Использовать object declaration",
+    "firstUnCorrectAnswer": "Использовать class с private constructor",
+    "secondUnCorrectAnswer": "Использовать data class",
+    "thirdUnCorrectAnswer": "Использовать companion object"
+  },
+  {
+    "quest": "Что делает оператор `!!`?",
+    "correctAnswer": "Приводит nullable-тип к non-null (может вызвать NPE)",
+    "firstUnCorrectAnswer": "Проверяет на равенство null",
+    "secondUnCorrectAnswer": "Объявляет переменную как non-null",
+    "thirdUnCorrectAnswer": "Преобразует тип к Any"
+  },
+  {
+    "quest": "Что такое `inline` функции?",
+    "correctAnswer": "Функции, код которых встраивается в место вызова",
+    "firstUnCorrectAnswer": "Функции, которые нельзя переопределить",
+    "secondUnCorrectAnswer": "Функции для работы с коллекциями",
+    "thirdUnCorrectAnswer": "Анонимные функции"
+  },
+  {
+    "quest": "Как работает `destructuring declaration`?",
+    "correctAnswer": "Разбивает объект на несколько переменных",
+    "firstUnCorrectAnswer": "Удаляет объект из памяти",
+    "secondUnCorrectAnswer": "Объявляет несколько переменных сразу",
+    "thirdUnCorrectAnswer": "Создает копию объекта"
+  },
+  {
+    "quest": "Что такое `reified` параметры?",
+    "correctAnswer": "Параметры типа, доступные в runtime",
+    "firstUnCorrectAnswer": "Неизменяемые параметры",
+    "secondUnCorrectAnswer": "Параметры с значениями по умолчанию",
+    "thirdUnCorrectAnswer": "Параметры для асинхронных функций"
+  },
+  {
+    "quest": "Чем отличается `open` класс от обычного?",
+    "correctAnswer": "open класс можно наследовать, обычный - final",
+    "firstUnCorrectAnswer": "open класс абстрактный",
+    "secondUnCorrectAnswer": "open класс может содержать только абстрактные методы",
+    "thirdUnCorrectAnswer": "Разницы нет"
+  },
+  {
+    "quest": "Что такое `tailrec` функция?",
+    "correctAnswer": "Рекурсивная функция, оптимизированная компилятором в цикл",
+    "firstUnCorrectAnswer": "Функция с переменным числом аргументов",
+    "secondUnCorrectAnswer": "Функция, которая вызывается в конце другой функции",
+    "thirdUnCorrectAnswer": "Асинхронная функция"
+  },
+  {
+    "quest": "Как работает `also` в Kotlin?",
+    "correctAnswer": "Выполняет блок кода с объектом и возвращает сам объект",
+    "firstUnCorrectAnswer": "Проверяет условие и возвращает boolean",
+    "secondUnCorrectAnswer": "Преобразует объект в другой тип",
+    "thirdUnCorrectAnswer": "Создает копию объекта"
+  },
+  {
+    "quest": "Что такое `DSL` в контексте Kotlin?",
+    "correctAnswer": "Domain-Specific Language - язык специфичный для предметной области",
+    "firstUnCorrectAnswer": "Dynamic Scripting Language",
+    "secondUnCorrectAnswer": "Data Storage Layer",
+    "thirdUnCorrectAnswer": "Debugging Support Library"
+  },
+  {
+    "quest": "Как объявить интерфейс в Kotlin?",
+    "correctAnswer": "С помощью ключевого слова interface",
+    "firstUnCorrectAnswer": "С помощью ключевого слова abstract",
+    "secondUnCorrectAnswer": "С помощью ключевого слова trait",
+    "thirdUnCorrectAnswer": "С помощью ключевого слова protocol"
+  },
+  {
+    "quest": "Что такое `SAM conversion`?",
+    "correctAnswer": "Автоматическое преобразование лямбды в интерфейс с одним методом",
+    "firstUnCorrectAnswer": "Преобразование типов в коллекциях",
+    "secondUnCorrectAnswer": "Оптимизация памяти для строк",
+    "thirdUnCorrectAnswer": "Способ сериализации объектов"
+  },
+  {
+    "quest": "Как работает `let` scope функция?",
+    "correctAnswer": "Выполняет блок кода с объектом и возвращает результат блока",
+    "firstUnCorrectAnswer": "Проверяет объект на null",
+    "secondUnCorrectAnswer": "Создает копию объекта",
+    "thirdUnCorrectAnswer": "Изменяет состояние объекта"
+  }
+,
+  {
+    "quest": "Как объявить переменную, которая может быть null?",
+    "correctAnswer": "Использовать знак вопроса после типа: `var name: String?`",
+    "firstUnCorrectAnswer": "Использовать ключевое слово nullable",
+    "secondUnCorrectAnswer": "Объявить как обычную переменную, Kotlin сам обработает null",
+    "thirdUnCorrectAnswer": "Использовать аннотацию @Nullable"
+  },
+  {
+    "quest": "Что выведет код: `println(listOf(1, 2, 3).map { it * 2 })`?",
+    "correctAnswer": "[2, 4, 6]",
+    "firstUnCorrectAnswer": "[1, 2, 3]",
+    "secondUnCorrectAnswer": "Ошибку компиляции",
+    "thirdUnCorrectAnswer": "[1, 2, 3, 1, 2, 3]"
+  },
+
+  {
+    "quest": "Что такое 'inline class' и зачем он нужен?",
+    "correctAnswer": "Обертка над типом для type-safety без накладных расходов в runtime",
+    "firstUnCorrectAnswer": "Класс, методы которого встраиваются компилятором",
+    "secondUnCorrectAnswer": "Специальный класс для оптимизации памяти",
+    "thirdUnCorrectAnswer": "Анонимный класс внутри функции"
+  },
+  {
+    "quest": "Как работает контрактная система (contracts) в Kotlin?",
+    "correctAnswer": "Позволяет давать компилятору дополнительные гарантии о поведении функций",
+    "firstUnCorrectAnswer": "Система проверки условий в рантайме",
+    "secondUnCorrectAnswer": "Механизм для аннотирования параметров",
+    "thirdUnCorrectAnswer": "Способ взаимодействия с Java-кодом"
+  },
+
+  {
+    "quest": "Как реализовать ковариантность/контравариантность в Kotlin?",
+    "correctAnswer": "Использовать `out` для ковариантности и `in` для контравариантности",
+    "firstUnCorrectAnswer": "Через ключевое слово variant",
+    "secondUnCorrectAnswer": "Автоматически поддерживается для всех generic-типов",
+    "thirdUnCorrectAnswer": "Через аннотации @Covariant/@Contravariant"
+  },
+  {
+    "quest": "Что такое 'crossinline' и 'noinline' в контексте inline-функций?",
+    "correctAnswer": "noinline - запрещает встраивание лямбды, crossinline - запрещает нелокальный return",
+    "firstUnCorrectAnswer": "crossinline - для кросс-платформенного кода, noinline - для отмены встраивания",
+    "secondUnCorrectAnswer": "Оба запрещают встраивание кода",
+    "thirdUnCorrectAnswer": "Специфичные аннотации для корутин"
+  },
+
+  {
+    "quest": "Как оптимизировать цепочку `list.map {}.filter {}.take(10)`?",
+    "correctAnswer": "Использовать `asSequence()` для ленивых вычислений",
+    "firstUnCorrectAnswer": "Заменить на цикл for",
+    "secondUnCorrectAnswer": "Объединить операции в одну map-функцию",
+    "thirdUnCorrectAnswer": "Использовать parallelStream()"
+  },
+  {
+    "quest": "Как безопасно работать с SharedPreferences в Android с Kotlin?",
+    "correctAnswer": "Использовать делегаты: `var pref by preferences.stringPreferencesKey(\"key\")`",
+    "firstUnCorrectAnswer": "Всегда проверять на null при чтении",
+    "secondUnCorrectAnswer": "Использовать !! оператор",
+    "thirdUnCorrectAnswer": "Обернуть в try-catch блок"
+  },
+
+  {
+    "quest": "Чем отличается `launch` от `async` в корутинах?",
+    "correctAnswer": "launch - запускает корутину без результата, async - возвращает Deferred с результатом",
+    "firstUnCorrectAnswer": "launch - для фоновых задач, async - для UI-потока",
+    "secondUnCorrectAnswer": "async работает только с Dispatchers.IO",
+    "thirdUnCorrectAnswer": "Разницы нет, оба делают одно и то же"
+  },
+  {
+    "quest": "Как отменить родительскую корутину и все дочерние?",
+    "correctAnswer": "Вызвать cancel() на scope или Job родительской корутины",
+    "firstUnCorrectAnswer": "Использовать GlobalScope.cancel()",
+    "secondUnCorrectAnswer": "Вызвать stopAllCoroutines()",
+    "thirdUnCorrectAnswer": "Корутины нельзя отменить"
+  },
+
+  {
+    "quest": "Чем отличается `flatMap` от `map`?",
+    "correctAnswer": "flatMap преобразует каждый элемент в коллекцию и затем 'разглаживает' результат",
+    "firstUnCorrectAnswer": "flatMap работает только с null-значениями",
+    "secondUnCorrectAnswer": "map не может возвращать коллекции",
+    "thirdUnCorrectAnswer": "flatMap быстрее для больших данных"
+  },
+  {
+    "quest": "Когда использовать `groupBy` vs `associateBy`?",
+    "correctAnswer": "groupBy - когда несколько значений для одного ключа, associateBy - когда одно значение на ключ",
+    "firstUnCorrectAnswer": "groupBy - для примитивов, associateBy - для объектов",
+    "secondUnCorrectAnswer": "associateBy - устаревший метод",
+    "thirdUnCorrectAnswer": "Разницы нет, оба делают одно и то же"
+  },
+
+  {
+    "quest": "Как использовать ViewBinding с Kotlin?",
+    "correctAnswer": "Включить в build.gradle и использовать сгенерированный Binding-класс",
+    "firstUnCorrectAnswer": "Через аннотацию @BindView",
+    "secondUnCorrectAnswer": "Автоматически через делегаты",
+    "thirdUnCorrectAnswer": "Только с Data Binding"
+  },
+  {
+    "quest": "Как правильно обрабатывать жизненный цикл корутин в Android?",
+    "correctAnswer": "Использовать lifecycleScope и viewModelScope",
+    "firstUnCorrectAnswer": "Всегда использовать GlobalScope",
+    "secondUnCorrectAnswer": "Создавать кастомные Scope для каждого экрана",
+    "thirdUnCorrectAnswer": "Не нужно обрабатывать, корутины сами чувствуют lifecycle"
+  },
+
+  {
+    "quest": "Как избегать boxing примитивов в Kotlin?",
+    "correctAnswer": "Использовать специализированные коллекции (IntArray вместо Array<Int>)",
+    "firstUnCorrectAnswer": "Всегда использовать var вместо val",
+    "secondUnCorrectAnswer": "Применять inline-классы",
+    "thirdUnCorrectAnswer": "Kotlin автоматически это оптимизирует"
+  },
+  {
+    "quest": "Когда использовать `Array` вместо `List`?",
+    "correctAnswer": "Когда нужна фиксированная размерность и производительность с примитивами",
+    "firstUnCorrectAnswer": "Всегда использовать List - он лучше",
+    "secondUnCorrectAnswer": "Только для взаимодействия с Java-кодом",
+    "thirdUnCorrectAnswer": "Когда нужна изменяемость"
+  },
+
+  {
+    "quest": "Что такое 'tail recursion' и как она работает в Kotlin?",
+    "correctAnswer": "Рекурсия, где вызов - последняя операция (оптимизируется в цикл)",
+    "firstUnCorrectAnswer": "Рекурсия с сохранением промежуточных результатов",
+    "secondUnCorrectAnswer": "Рекурсия с ограниченной глубиной",
+    "thirdUnCorrectAnswer": "Специальный тип рекурсии для коллекций"
+  },
+  {
+    "quest": "Как работают функции высшего порядка в Kotlin?",
+    "correctAnswer": "Функции, принимающие другие функции как параметры или возвращающие их",
+    "firstUnCorrectAnswer": "Функции, объявленные в顶层 кода (top-level)",
+    "secondUnCorrectAnswer": "Функции с большим количеством параметров",
+    "thirdUnCorrectAnswer": "Функции, которые могут изменять свое поведение"
   }
 ]

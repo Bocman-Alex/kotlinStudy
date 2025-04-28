@@ -11,7 +11,7 @@ class MainActivity : AppCompatActivity()
 {
 
 	private lateinit var binding: ActivityMainBinding
-	private val newQuestionUsecase = NewQuestionUsecase()
+
 	private val chooseCorrectUsecase = ChooseCorrectUsecase()
 	private val setQuestionOnButtons = SetQuestionOnButtons()
 
@@ -21,6 +21,9 @@ class MainActivity : AppCompatActivity()
 		super.onCreate(savedInstanceState)
 		binding = ActivityMainBinding.inflate(layoutInflater)
 		setContentView(binding.root)
+
+		val newQuestionUsecase = NewQuestionUsecase(this)
+
 
 		val context = this
 		var question = newQuestionUsecase.constructQuestion()
