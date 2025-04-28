@@ -1,16 +1,25 @@
 package domain.usecase
 
-import android.content.Context
-import android.widget.Toast
+import android.annotation.SuppressLint
+import android.content.res.ColorStateList
+import android.graphics.Color
+import android.widget.Button
 
 
 class ChooseCorrectUsecase
 {
-	internal fun equals(str: String, context:Context,str2: String)
+	@SuppressLint("ResourceAsColor")
+	internal fun equals(str: String, str2: String, button: Button)
 	{
-		val message = if (str == str2) "correctAnswer" else "unCorrectAnswer"
-		Toast.makeText(context, message, Toast.LENGTH_SHORT).show()
-
+		/*	val message = if (str == str2) "correctAnswer" else "unCorrectAnswer"
+			Toast.makeText(context, message, Toast.LENGTH_SHORT).show()*/
+		if (str == str2)
+		{
+			button.setBackgroundTintList(ColorStateList.valueOf(Color.parseColor("#4CAF50")))
+		} else
+		{
+			button.setBackgroundTintList(ColorStateList.valueOf(Color.parseColor("#DA0303")))
+		}
 
 	}
 }

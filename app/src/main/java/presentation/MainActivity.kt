@@ -25,7 +25,7 @@ class MainActivity : AppCompatActivity()
 		val newQuestionUsecase = NewQuestionUsecase(this)
 
 
-		val context = this
+		
 		var question = newQuestionUsecase.constructQuestion()
 
 
@@ -35,35 +35,40 @@ class MainActivity : AppCompatActivity()
 		binding.bNext.setOnClickListener {
 			question = newQuestionUsecase.constructQuestion()
 			setQuestionOnButtons.setQuest(question, binding)
+
 		}
 
 
 		binding.bFirstAnswer.setOnClickListener {
 			chooseCorrectUsecase.equals(
 				binding.bFirstAnswer.text.toString(),
-				context,
-				question.correctAnswer
+
+				question.correctAnswer,
+				binding.bFirstAnswer
 			)
 		}
 		binding.bSecondAnswer.setOnClickListener {
 			chooseCorrectUsecase.equals(
 				binding.bSecondAnswer.text.toString(),
-				context,
-				question.correctAnswer
+
+				question.correctAnswer,
+				binding.bSecondAnswer
 			)
 		}
 		binding.bThirdAnswer.setOnClickListener {
 			chooseCorrectUsecase.equals(
 				binding.bThirdAnswer.text.toString(),
-				context,
-				question.correctAnswer
+
+				question.correctAnswer,
+				binding.bThirdAnswer
 			)
 		}
 		binding.bFourthAnswer.setOnClickListener {
 			chooseCorrectUsecase.equals(
 				binding.bFourthAnswer.text.toString(),
-				context,
-				question.correctAnswer
+
+				question.correctAnswer,
+				binding.bFourthAnswer
 			)
 		}
 
