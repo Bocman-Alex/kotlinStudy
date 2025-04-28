@@ -1,0 +1,16 @@
+[
+  {
+    "quest": "Что такое Null Safety в Kotlin?",
+    "correctAnswer": "Механизм, предотвращающий NPE",
+    "firstUnCorrectAnswer": "Способ ускорения работы приложения",
+    "secondUnCorrectAnswer": "Функция для работы с коллекциями",
+    "thirdUnCorrectAnswer": "Синтаксис для создания анонимных классов"
+  },
+  {
+    "quest": "Чем отличается `val` от `var`?",
+    "correctAnswer": "val - неизменяемая (read-only), var - изменяемая переменная",
+    "firstUnCorrectAnswer": "val - для чисел, var - для строк",
+    "secondUnCorrectAnswer": "val - изменяемая, var - неизменяемая",
+    "thirdUnCorrectAnswer": "Разницы нет"
+  }
+]
